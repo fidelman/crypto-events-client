@@ -1,0 +1,15 @@
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  width: 256px; // from UI library
+
+  & > * {
+    // !important to rewrite inline styles from UI library
+    margin-bottom: 5px !important;
+
+    &:not(:last-child) {
+      // !important to rewrite inline styles from UI library
+      margin-right: 5px !important;
+    }
+  }
+}
